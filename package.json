@@ -1,20 +1,21 @@
 {
-  "name": "sharev4",
+  "name": "@aish1309/sharev4",
   "version": "0.1.0",
-  "private": true,
+  "main": "dist/src/index.js",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-router-dom": "^6.26.1",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+      "build": "babel src --out-dir dist",
+"test": "react-scripts test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -34,5 +35,14 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "publishConfig": {
+    "@aish1309:registry": "https://npm.pkg.github.com"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.25.6",
+    "@babel/core": "^7.25.2",
+    "@babel/preset-env": "^7.25.4",
+    "@babel/preset-react": "^7.24.7"
   }
 }
